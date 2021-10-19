@@ -1,0 +1,119 @@
+/* 規範開始 */
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.p2 {
+    font-size: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mr-28 {
+    margin-right: 28px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+/* 規範結束 */
+
+/* 物件開始*/
+
+.aside {
+    padding-top: 36px;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.75;
+}
+
+.aside-img {
+    width: 108px;
+}
+
+.content{
+    padding: 0 36px;
+    color: #fff;
+} 
+
+.content-title {
+    padding: 36px 0;
+}
+
+.content-menu {
+    display: flex;
+    align-items: center;
+}
+
+.content-menu-select {
+    background-color: rgba(255, 255, 255, .25);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    width: 170px;
+    height: 36px;
+}
+
+.content-menu-input {
+    background-color: rgba(255, 255, 255, .25);
+    color: #fff;
+    font-size: 18px;
+    width: 196px;
+    height: 36px;
+    padding: 0 10px;
+    border: none;
+}
+
+.content-menu-checkbox {
+    color: #fff;
+}
+
+.content-menu-checkbox > input {
+    background-color: #fff;
+    border: none;
+}
+
+.healthy-slider {
+    display: flex;
+    align-items: center;
+}
+
+#slider-range {
+    margin: 0 5px;
+    width: 200px;
+}
