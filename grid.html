@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            background-color: #fff;
+            width: 1920px;
+            height: 1080px;
+            grid-template-rows:150px 930px;
+            grid-column-gap: 12px;
+            grid-template-columns: 180px 1740px;
+            grid-row-gap: 12px;
+        }
+
+        .aside {
+            grid-row: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="aside"></div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

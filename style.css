@@ -1,5 +1,4 @@
 /* 規範開始 */
-
 h1 {
     font-size: 30px;
     font-weight: bold;
@@ -17,14 +16,17 @@ h3 {
 
 h4 {
     font-size: 20px;
+    font-weight: normal;
 }
 
 h5 {
     font-size: 18px;
+    font-weight: normal;
 }
 
 h6 {
     font-size: 16px;
+    font-weight: normal;
 }
 
 p {
@@ -33,6 +35,9 @@ p {
 
 .p2 {
     font-size: 12px;
+}
+.mr-12 {
+    margin-right: 12px;
 }
 
 .mr-24 {
@@ -43,24 +48,82 @@ p {
     margin-right: 28px;
 }
 
+.mr-60 {
+    margin-right: 60px;
+}
+
 .mb-28 {
     margin-bottom: 28px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
 }
 
 .mb-60 {
     margin-bottom: 60px;
 }
 
+.grid {
+    display: grid;
+    width: 1920px;
+    height: 1080px;
+    grid-template-rows:150px 930px;
+    grid-column-gap: 12px;
+    grid-template-columns: 180px 1740px;
+    grid-row-gap: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
 /* 規範結束 */
 
-/* 物件開始*/
+/* 通用元件開始 */
+
+
+/* 通用元件結束 */
 
 .aside {
     padding-top: 36px;
     text-align: center;
     background-color: #fff;
     opacity: 0.75;
+    grid-row: 1 / 3;
 }
+
+.aside-img {
+    width: 108px;
+}
+
+@media (max-width: 965px) {
+    .grid {
+        grid-template-rows:60px 1fr;
+        grid-template-columns: 1920px;
+    }
+
+    .aside {
+        display: flex;
+        padding-top: 36px;
+        text-align: center;
+        background-color: #fff;
+        opacity: 0.75;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+}
+
+
+/* 首頁位置*/
 
 .aside-img {
     width: 108px;
@@ -117,3 +180,96 @@ p {
     margin: 0 5px;
     width: 200px;
 }
+
+/* 首頁結束*/
+
+/* 設備開始 */
+
+.link-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #fff solid;
+}
+
+.link {
+    display: inline-block;
+    padding-bottom: 12px;
+    border-bottom: 3px rgba(255, 255, 255, 0) solid;
+}
+
+    .link:hover {
+        border-bottom: 3px #fff solid;
+    }
+
+.info {
+    height: 360px;
+    padding: 40px;
+    margin: 24px 2px;
+    background-color: rgb(26, 54, 73);
+}
+
+.fix-info {
+    margin-bottom: 3px;
+    background-color: #20BBE4;
+    border-radius: 3px;
+    padding: 12px 22px;
+}
+
+.time-box {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 3px 12px 3px 3px;
+}
+
+.spectrogram {
+    width: 670px;
+    height: 450px;
+    padding: 21px;
+    background-color: rgb(26, 54, 73);
+}
+
+.sensor-site {
+    width: 393px;
+    height: 450px;
+    padding: 21px;
+    background-color: rgb(26, 54, 73);
+}
+
+.health-degree {
+    width: 515px;
+    height: 450px;
+    padding: 21px;
+    background-color: rgb(26, 54, 73);
+}
+
+.alert-box {
+    position: absolute;
+    top: calc(1080px / 2 - 310px);
+    left: calc(1920px / 2 - 210px);
+    width: 421px;
+    height: 621px;
+    background-color: #284258;
+}
+
+.alert-box-title {
+    width: 100%;
+    height: 60px;
+    padding: 16px 24px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.alert-box-content {
+    padding: 22px;
+}
+
+.alert-box-closebutton {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 30px;
+    border: 0px;
+    padding: 16px 28px;
+    color: #fff;
+    background-color: #20BBE4;
+}
+
+/* 設備結束 */

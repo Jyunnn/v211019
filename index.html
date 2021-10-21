@@ -35,64 +35,60 @@
         }
 
         body {
+            /* max-width: 1920px;
+            max-height: 1024px; */
             font-family: "Microsoft JhengHei";
             background-color: #264057;
         }
     </style>
 </head>
 <body>
-    <div class="row">
-
-        <div class="col-sm-1">
-            <div class="aside">
-                <div class="mb-60">
-                    <img class="aside-img" src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="">
-                </div>
-                <h4 class="mb-28">
-                    <a href="">首頁</a>
-                </h4>
-                <h4 class="mb-28">
-                    <a href="">--</a>
-                </h4>
-                <h4 class="mb-28">
-                    <a href="">--</a>
-                </h4>
-                <h4 class="mb-28">
-                    <a href="">--</a>
-                </h4>
+    <div class="grid">
+        <div class="aside">
+            <div class="mb-60">
+                <img class="aside-img" src="" alt="">
             </div>
+            <h4 class="mb-28">
+                <a href="/">首頁</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="/equipment.html">設備</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="">--</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="">--</a>
+            </h4>
         </div>
-
-        <div class="col-sm-11">
-            <div class="content">
-                <div class="content-title">
-                    <h1>首頁</h1>
-                </div>
-                <div class="content-menu">
-                    <h3 class="mr-28">設備篩選</h3>
-                    <select class="content-menu-select mr-24" name="" id="">
-                        <option value="系統">系統</option>
-                    </select>
-                    <select class="content-menu-select mr-24" name="" id="">
-                        <option value="群組">群組</option>
-                    </select>
-                    <input class="content-menu-input" type="text" placeholder="請輸入設備名稱">
-                    <label class="content-menu-checkbox" for="">
-                        <input type="checkbox" name="" id="" style="width: 16px;">
-                        已連線
-                    </label>
-                    <label class="content-menu-checkbox" for="">
-                        <input type="checkbox" name="" id="" style="width: 16px;">
-                        未連線
-                    </label>
-                    <div class="healthy-slider">
-                        <h3>健康篩選：</h3>
-                        <div>
-                            <div style="display: flex;">
-                                <p>0</p>
-                                <div id="slider-range"></div>
-                                <p>80</p>
-                            </div>
+        <div class="content">
+            <div class="content-title">
+                <h1>首頁</h1>
+            </div>
+            <div class="content-menu">
+                <h3 class="mr-28">設備篩選</h3>
+                <select class="content-menu-select mr-24" name="" id="">
+                    <option value="系統">系統</option>
+                </select>
+                <select class="content-menu-select mr-24" name="" id="">
+                    <option value="群組">群組</option>
+                </select>
+                <input class="content-menu-input" type="text" placeholder="請輸入設備名稱">
+                <label class="content-menu-checkbox" for="">
+                    <input type="checkbox" name="" id="" style="width: 16px;">
+                    已連線
+                </label>
+                <label class="content-menu-checkbox" for="">
+                    <input type="checkbox" name="" id="" style="width: 16px;">
+                    未連線
+                </label>
+                <div class="healthy-slider">
+                    <h3>健康篩選：</h3>
+                    <div>
+                        <div style="display: flex;">
+                            <p>0</p>
+                            <div id="slider-range"></div>
+                            <p>80</p>
                         </div>
                     </div>
                 </div>

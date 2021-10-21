@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 100,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                console.log(ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+            }
+            });
+            // $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+            // " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1920px;
+            height: 1024px;
+            font-family: "Microsoft JhengHei";
+            background-color: #264057;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div class="aside">
+            <div class="mb-60">
+                <img class="aside-img" src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" alt="">
+            </div>
+            <h4 class="mb-28">
+                <a href="/">首頁</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="/equipment.html">設備</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="">--</a>
+            </h4>
+            <h4 class="mb-28">
+                <a href="">--</a>
+            </h4>
+        </div>
+
+        <div class="content">
+            <div class="content-title">
+                <h1>箭頭 設備位置 / 所屬群組(名稱) / 設備系統 / VMS-00000000</h1>
+            </div>
+            <div class="content-menu link-menu">
+                <div>
+                    <h1 class="mr-28 link"><a href="/">設備篩選</a></h1>
+                    <h1 class="mr-28 link"><a href="/">數值分析</a></h1>
+                    <h1 class="mr-28 link"><a href="/">維護建議</a></h1>
+                    <h1 class="mr-28 link"><a href="/">維護紀錄</a></h1>
+                </div>
+                <div class="fix-info">
+                    <h2>匯入維修資訊</h2>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="flex space-between align-items mb-12">
+                    <h2>設備資訊</h2>
+                    <p>頻率: 00.00 Hz</p>
+                </div>
+                <div class="flex space-between align-items">
+                    <div class="flex align-items">
+                        <h6 class="mr-12">購入日期</h6>
+                        <div class="time-box mr-60">
+                            <h6>2010.12.09</h6>
+                        </div>
+                        <h6 class="mr-12">啟用日期</h6>
+                        <div class="time-box mr-60">
+                            <h6>2010.12.09</h6>
+                        </div>
+                        <h6>切換圖表</h6>
+                    </div>
+                    <p>系統穩定指標：000 分鐘</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="spectrogram mr-24">
+                    <h2>1</h2>
+                </div>
+                <div class="sensor-site mr-24">
+                    <h2>1</h2>
+                </div>
+                <div class="health-degree">
+                    <h2>1</h2>
+                </div>
+            </div>
+
+            <div class="alert-box">
+                <div class="alert-box-title">
+                    <h2>訊息提醒</h2>
+                </div>
+                <div class="alert-box-content">
+                    <div class="flex space-between">
+                        <div style="margin-bottom: 8px;">
+                            <p style="margin-bottom: 2px;">設備名稱</p>
+                            <h5>VMS-00000000已停機</h5>
+                        </div>
+                        <button> 進行維護 </button>
+                    </div>
+                    <p style="margin-bottom: 8px;">異常：頻段警戒</p>
+                    <p style="margin-bottom: 12px;">原因：監測頻段已超出警戒值！</p>
+                    <p style="margin-bottom: 12px;">選擇異常原因</p>
+                    <div>
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            跳停電
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            地震
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            已維修
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            無異常
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            更換設備
+                        </label>
+                    </div>
+                </div>
+
+                <button class="alert-box-closebutton"> 
+                    <h3>關閉</h3>
+                </button>
+            </div>
+        </div>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
